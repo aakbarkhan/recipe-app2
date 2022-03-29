@@ -24,8 +24,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 1. In your terminal, `cd` to the directory where you want to copy this project.
-2. Still in your terminal, clone the repository by typing `git clone https://github.com/phelian23/recipe-app.git`
-3. Run cd `recipe-app`
+2. Still in your terminal, clone the repository by typing `git clone https://github.com/aakbarkhan/recipe-app2`
+3. Run cd `recipe-app2`
 
 ### Install
 
