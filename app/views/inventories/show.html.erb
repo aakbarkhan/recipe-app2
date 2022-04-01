@@ -1,25 +1,22 @@
-<h1> Foods </h1>
-  <div>
-  <div>
-  </div>
-        <div > <%= link_to 'New food', new_food_path %></div> 
-
-        <table class="table">
+<div>
+  <h1><%= @inventory.name %></h1>
+  <div > <%= link_to 'Add food', new_inventory_inventory_food_path(current_user.id) %></div>
+ <table class="table">
         <thead>
             <tr>
             <th >Food</th>
-            <th >Measurement Unit</th>
+            <th >Quantity</th>
             <th >Price</th>
             <th >Actions</th>
             </tr>
         </thead>
 
         <tbody>
-        <% current_user.foods.each do |food| %>
+        <% @foods.each do |food|%>
             <tr>
-            <td class="<%=food.id %>"%><%= food.name %></td>
-            <td><%= food.measurementUnit %></td>
-            <td><%= food.price %></td>
+            <td><%= food.food.name %></td>
+            <td><%= food.quantity %></td>
+            <td><%= food.food.price %></td>
             <td><%= button_to "Delete Food", food_path(food.id), method: :delete, 
                     data: {confirm: 'Are you sure?'}, class: "btn btn-primary" %> </td>
             
@@ -30,4 +27,4 @@
 
         </table>
 
-    </div>
+</div>
