@@ -3,15 +3,15 @@
 <div class='mb-5'>
   <%= form_with(model: @recipe, url: recipes_path) do |f| %>
 
-      <div >
     <div  >
+    <div>
       <%= f.label "Name:" %> 
       <div class = "col-sm-7" >
       <%= f.text_field :name,   class:"form-control", placeholder: "Enter recipe name", autofocus: true %>
       </div>
     </div>
 
-    <div>
+    <div class = "col-sm-7">
       <%= f.label "Description:"%> 
       <div>
       <%= f.text_area :description, class:"form-control", placeholder: "Enter recipe description", autofocus: true %>
@@ -35,7 +35,7 @@
 
     <div class= "form-group d-flex my-4" >
       <%= f.label "Public", class: "col-sm-2 col-form-label text-end mx-4" %> 
-      <div class = "col-sm-2" >
+      <div >
       <%= f.check_box :public,   class:"form-control", autofocus: true %>
       </div>
     </div>
