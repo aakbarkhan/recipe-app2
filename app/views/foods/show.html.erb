@@ -1,0 +1,8 @@
+<div>
+  <h5> <%= @food.name %></h5>
+  <div >
+    <h5>Measurement Unit: <%= @food.measurementUnit %></h5>
+    <p>Price: $<%= @food.Price %></p>
+    <%= button_to "Delete Food", food_path(@food.id), method: :delete%>
+  </div>
+</div>

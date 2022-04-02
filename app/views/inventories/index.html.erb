@@ -1,0 +1,16 @@
+<div>
+<h1>Inventory List</h1>
+
+<div > <%= link_to 'New Inventory', new_inventory_path %></div>
+
+  <% current_user.inventories.each do |inv| %>
+    <div>
+    <%= link_to 'See inventory', inventory_path(inv.id) %>
+    <h2><%= inv.name %></h2>
+    <%= button_to "Delete Inventory", inventory_path(inv.id), method: :delete, 
+      data: {confirm: 'Are you sure?'}, class: "btn btn-primary" %>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .</p>
+
+    <% end %>
+</div>

@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Recipe App
+# Recipe APP 2
 
 ### About the project
 
@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 1. In your terminal, `cd` to the directory where you want to copy this project.
-2. Still in your terminal, clone the repository by typing `git clone https://github.com/aakbarkhan/recipe-app2`
+2. Still in your terminal, clone the repository by typing `git clone https://github.com/aakbarkhan/recipe-app2.git`
 3. Run cd `recipe-app2`
 
 ### Install
@@ -45,16 +45,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
+
 👤 **Aku Khan**
 
 - GitHub: [@aakbarkhan](https://github.com/aakbarkhan)
 - Twitter: [@aaku_mdakbar](https://twitter.com/aaku_mdakbar)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/akuu-khan/)
 
-👤 **Oluwafemi Awoyemi**
+👤 **Zachee Ishimwe**
 
-- GitHub: [@ishimwezachee](https://github.com/ishimwezachee)
-- Twitter: [@zachee250](https://twitter.com/zachee250)
+- GitHub: [@zacheeIshimwe](https://github.com/ishimwezachee)
+- LinkedIn: [@zacheeIshimwe](https://www.linkedin.com/in/zachee-ishimwe-ab952a119/)
 
 
 
