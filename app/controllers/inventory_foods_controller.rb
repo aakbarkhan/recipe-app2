@@ -1,9 +1,7 @@
 class InventoryFoodsController < ApplicationController
-
   def new
     @inventory = Inventory.find_by(params[:inventories_id])
     @inventory_food = @inventory.inventory_foods.new
-  
   end
 
   def create

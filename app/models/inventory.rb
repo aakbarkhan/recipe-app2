@@ -3,4 +3,3 @@ class Inventory < ApplicationRecord
   has_many :inventory_foods, dependent: :destroy
   has_many :foods, through: :inventory_foods
 end
-
