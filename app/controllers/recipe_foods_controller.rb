@@ -9,17 +9,17 @@ class RecipeFoodsController < ApplicationController
     @recipe_food = @recipe.recipe_foods.create(recipe_food_params)
     if @recipe_food.save
       flash[:success] = 'Food created succesfully'
-      redirect_to recipes_url
+      redirect_to @recipe
     else
       render 'new'
     end
   end
 
   def destroy
-    @recipe_food = RecipeFood.find(params[:recipe_id])
+    @recipe_food = RecipeFood.find(params[:id])
     @recipe_food.destroy
     flash[:success] = 'Food deleted successfully'
-    redirect_to recipe_food_path
+    redirect_to recipe_path(@recipe_food.recipe_id)
   end
 
   private

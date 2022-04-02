@@ -1,6 +1,8 @@
 class InventoriesController < ApplicationController
   def index
-    @inventories = current_user.inventories
+    @inventories = Inventory.all
+    @inventory = Inventory.find_by(id: params[:id])
+
   end
 
   def new

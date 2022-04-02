@@ -1,6 +1,7 @@
 class RecipesController < ApplicationController
   def index
     @recipes = current_user.recipes
+    @recipe = Recipe.find_by(id: params[:id])
   end
 
   def new

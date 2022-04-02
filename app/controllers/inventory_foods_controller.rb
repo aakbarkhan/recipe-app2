@@ -1,7 +1,9 @@
 class InventoryFoodsController < ApplicationController
+
   def new
-    @inventory = Inventory.find(params[:inventory_id])
+    @inventory = Inventory.find_by(params[:inventories_id])
     @inventory_food = @inventory.inventory_foods.new
+  
   end
 
   def create
@@ -19,7 +21,7 @@ class InventoryFoodsController < ApplicationController
     @inventory_food = InventoryFood.find(params[:id])
     @inventory_food.destroy
     flash[:success] = 'Food deleted successfully'
-    redirect_to inventory_food_path
+    redirect_to inventories_path
   end
 
   private

@@ -17,8 +17,7 @@
             <td><%= food.food.name %></td>
             <td><%= food.quantity %></td>
             <td><%= food.food.price %></td>
-            <td><%= button_to "Delete Food", food_path(food.id), method: :delete, 
-                    data: {confirm: 'Are you sure?'}, class: "btn btn-primary" %> </td>
+            <td><%= button_to "Delete Food", inventory_inventory_food_path(@inventory, food.id), method: :delete, class: "btn btn-primary" %> </td>
             
             </tr>
             <% end %>
